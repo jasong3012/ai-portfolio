@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Architect Portfolio | Stable Diffusion + Flux Art</title>
+    <meta name="description" content="God-tier AI generated art using Stable Diffusion and Flux. Commission your next masterpiece.">
+    <meta property="og:image" content="http://static.photos/technology/1200x630/42">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            green: '#00FF88',
+                            purple: '#FF00FF',
+                            dark: '#0A0A0A'
+                        }
+                    },
+                    fontFamily: {
+                        orbitron: ['Orbitron', 'sans-serif'],
+                        jetbrains: ['"JetBrains Mono"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cyber-dark text-white font-jetbrains overflow-x-hidden">
+    <!-- Navbar Component -->
+    <script src="components/navbar.js"></script>
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black opacity-70"></div>
+            <div class="absolute inset-0 bg-[url('https://static.photos/technology/1920x1080/1')] bg-cover bg-center opacity-20"></div>
+            <div class="absolute inset-0 grid grid-cols-12 grid-rows-12 pointer-events-none">
+                <div class="border border-cyber-green opacity-10"></div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10 flex flex-col justify-center min-h-screen">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-orbitron font-bold mb-6">
+                    <span class="text-cyber-green">AI</span> VISIONS FORGED IN <span class="text-cyber-purple">CODE</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">
+                    Stable Diffusion + Flux God-Tier Art | Architecting tomorrow's visuals with neural networks
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#gallery" class="px-8 py-3 bg-cyber-green hover:bg-cyber-purple text-black font-bold rounded-full transition-all duration-300 transform hover:scale-105">
+                        Explore Gallery
+                    </a>
+                    <button id="hireBtn" class="px-8 py-3 border-2 border-cyber-green hover:border-cyber-purple text-cyber-green hover:text-cyber-purple font-bold rounded-full transition-all duration-300 transform hover:scale-105">
+                        Hire Me
+                    </button>
+                    <button id="workflowBtn" class="px-8 py-3 bg-transparent hover:bg-cyber-green/10 text-cyber-green font-bold rounded-full transition-all duration-300 transform hover:scale-105">
+                        Workflows
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-cyber-dark to-black opacity-90"></div>
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMDAwMDAwIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiMwMGZmODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=')] opacity-5"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-orbitron font-bold mb-4">
+                    <span class="text-cyber-green">ABOUT</span> THE <span class="text-cyber-purple">ARCHITECT</span>
+                </h2>
+                <div class="w-24 h-1 bg-cyber-green mx-auto mb-6"></div>
+                <p class="text-lg md:text-xl max-w-4xl mx-auto">
+                    Architecting tomorrow's visuals with A1111, ComfyUI, and Flux. From pixel-perfect cel-shade to hyperreal nightmares – commissions open.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyber-green to-cyber-purple rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-200"></div>
+                        <div class="relative bg-cyber-dark rounded-lg p-1">
+                            <img src="https://static.photos/technology/640x640/42" alt="AI Architect" class="rounded-lg w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-orbitron font-bold mb-6">Digital Alchemist</h3>
+                    <p class="mb-6">
+                        I transform raw code into visual masterpieces using the latest AI generation techniques. Specializing in Stable Diffusion (A1111 + ComfyUI) and Flux workflows, I craft images that push the boundaries of digital art.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-black/50 p-4 rounded-lg border border-cyber-green/20 hover:border-cyber-green/50 transition-all">
+                            <div class="flex items-center">
+                                <i data-feather="cpu" class="text-cyber-green mr-3"></i>
+                                <span>500+ Generations</span>
+                            </div>
+                        </div>
+                        <div class="bg-black/50 p-4 rounded-lg border border-cyber-green/20 hover:border-cyber-green/50 transition-all">
+                            <div class="flex items-center">
+                                <i data-feather="heart" class="text-cyber-green mr-3"></i>
+                                <span>100% Client Satisfaction</span>
+                            </div>
+                        </div>
+                        <div class="bg-black/50 p-4 rounded-lg border border-cyber-green/20 hover:border-cyber-green/50 transition-all">
+                            <div class="flex items-center">
+                                <i data-feather="share-2" class="text-cyber-green mr-3"></i>
+                                <span>Viral TikToks</span>
+                            </div>
+                        </div>
+                        <div class="bg-black/50 p-4 rounded-lg border border-cyber-green/20 hover:border-cyber-green/50 transition-all">
+                            <div class="flex items-center">
+                                <i data-feather="zap" class="text-cyber-green mr-3"></i>
+                                <span>Lightning Fast</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cyber-green/10 text-cyber-green rounded-full text-sm">A1111</span>
+                        <span class="px-3 py-1 bg-cyber-green/10 text-cyber-green rounded-full text-sm">ComfyUI</span>
+                        <span class="px-3 py-1 bg-cyber-green/10 text-cyber-green rounded-full text-sm">Flux</span>
+                        <span class="px-3 py-1 bg-cyber-green/10 text-cyber-green rounded-full text-sm">LoRAs</span>
+                        <span class="px-3 py-1 bg-cyber-green/10 text-cyber-green rounded-full text-sm">ControlNet</span>
+                        <span class="px-3 py-1 bg-cyber-green/10 text-cyber-green rounded-full text-sm">Upscaling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section id="gallery" class="py-20 bg-black relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMDAwMDAwIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiNmZjAwZmYiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=')] opacity-5"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-orbitron font-bold mb-4">
+                    <span class="text-cyber-green">PORTFOLIO</span> <span class="text-cyber-purple">GALLERY</span>
+                </h2>
+                <div class="w-24 h-1 bg-cyber-purple mx-auto mb-6"></div>
+                <p class="text-lg md:text-xl max-w-4xl mx-auto">
+                    A selection of my finest AI-generated artworks. Click any image to explore the creation details.
+                </p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button class="filter-btn active px-4 py-2 bg-cyber-green text-black rounded-full font-bold" data-filter="all">All</button>
+                <button class="filter-btn px-4 py-2 border border-cyber-green text-cyber-green hover:bg-cyber-green hover:text-black rounded-full transition-all" data-filter="sd">Stable Diffusion</button>
+                <button class="filter-btn px-4 py-2 border border-cyber-green text-cyber-green hover:bg-cyber-green hover:text-black rounded-full transition-all" data-filter="flux">Flux</button>
+                <button class="filter-btn px-4 py-2 border border-cyber-green text-cyber-green hover:bg-cyber-green hover:text-black rounded-full transition-all" data-filter="pixel">Pixel Art</button>
+                <button class="filter-btn px-4 py-2 border border-cyber-green text-cyber-green hover:bg-cyber-green hover:text-black rounded-full transition-all" data-filter="hyperreal">Hyperreal</button>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 gallery-grid">
+                <!-- Gallery items will be loaded here via JavaScript -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <button id="loadMore" class="px-8 py-3 border-2 border-cyber-purple hover:bg-cyber-purple/10 text-cyber-purple font-bold rounded-full transition-all duration-300 transform hover:scale-105">
+                    Load More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflows Section -->
+    <section id="workflows" class="py-20 bg-cyber-dark relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-orbitron font-bold mb-4">
+                    <span class="text-cyber-green">WORKFLOW</span> <span class="text-cyber-purple">BREAKDOWNS</span>
+                </h2>
+                <div class="w-24 h-1 bg-cyber-green mx-auto mb-6"></div>
+                <p class="text-lg md:text-xl max-w-4xl mx-auto">
+                    Peek behind the curtain at my AI art generation processes.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-wrap justify-center gap-2 mb-8">
+                    <button class="tab-btn active px-6 py-3 bg-cyber-green text-black rounded-t-lg font-bold" data-tab="a1111">A1111</button>
+                    <button class="tab-btn px-6 py-3 border border-cyber-green text-cyber-green hover:bg-cyber-green/10 rounded-t-lg transition-all" data-tab="comfy">ComfyUI</button>
+                    <button class="tab-btn px-6 py-3 border border-cyber-green text-cyber-green hover:bg-cyber-green/10 rounded-t-lg transition-all" data-tab="flux-tab">Flux</button>
+                </div>
+                
+                <div class="tab-content active bg-black/50 p-6 rounded-b-lg rounded-tr-lg border border-cyber-green/20" id="a1111-tab">
+                    <h3 class="text-2xl font-orbitron font-bold mb-4">Stable Diffusion A1111 Workflow</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <img src="https://static.photos/technology/640x360/10" alt="A1111 Interface" class="rounded-lg w-full h-auto border border-cyber-green/30">
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Step 1: Prompt Engineering</h4>
+                            <p class="mb-4">Crafting the perfect prompt with weighted terms and artistic styles.</p>
+                            <div class="bg-black p-4 rounded-lg mb-4 overflow-x-auto">
+                                <pre class="text-cyber-green text-sm"><code>masterpiece, best quality, cyberpunk cityscape,
+neon lights, rain reflections, cinematic lighting,
+detailed textures, 8k, unreal engine 5 render,
+artstation trending, by greg rutkowski</code></pre>
+                            </div>
+                            <button class="copy-btn px-4 py-2 bg-cyber-green/10 hover:bg-cyber-green/20 border border-cyber-green text-cyber-green rounded-full text-sm transition-all">
+                                <i data-feather="copy" class="w-4 h-4 mr-1"></i> Copy Prompt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content hidden bg-black/50 p-6 rounded-b-lg rounded-tr-lg border border-cyber-green/20" id="comfy-tab">
+                    <h3 class="text-2xl font-orbitron font-bold mb-4">ComfyUI Workflow</h3>
+                    <p>Advanced node-based workflow for ultimate control.</p>
+                </div>
+                
+                <div class="tab-content hidden bg-black/50 p-6 rounded-b-lg rounded-tr-lg border border-cyber-green/20" id="flux-tab">
+                    <h3 class="text-2xl font-orbitron font-bold mb-4">Flux Generation Process</h3>
+                    <p>Creating mesmerizing animations with Flux.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-cyber-dark to-black opacity-90"></div>
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d
+</body>
+</html>
